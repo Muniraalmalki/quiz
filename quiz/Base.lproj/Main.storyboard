@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step of iOS development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1V-nD-eOt">
+                                <rect key="frame" x="20" y="100" width="374" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvs-dL-L7t">
+                                <rect key="frame" x="340" y="150.33333333333334" width="54" height="30.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dl-5d-hbR"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntf-xX-wAt" userLabel="Answer Label">
+                                <rect key="frame" x="20" y="298" width="374" height="81.333333333333314"/>
+                                <string key="text">Create the user interface. As we create the UI, we will get a better understanding of our application. Then we breath life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMO-9y-RMY">
+                                <rect key="frame" x="40" y="151" width="72" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ltu-f3-Tdw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQl-kD-Idi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ntf-xX-wAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1UU-K2-gcM"/>
+                            <constraint firstItem="UMO-9y-RMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="2gW-zh-LOo"/>
+                            <constraint firstItem="UMO-9y-RMY" firstAttribute="top" secondItem="n1V-nD-eOt" secondAttribute="bottom" constant="30.5" id="CKI-PS-qxB"/>
+                            <constraint firstItem="jvs-dL-L7t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UMO-9y-RMY" secondAttribute="trailing" constant="8" symbolic="YES" id="E1U-Hs-jcJ"/>
+                            <constraint firstItem="Ntf-xX-wAt" firstAttribute="top" secondItem="jvs-dL-L7t" secondAttribute="bottom" constant="117" id="J2k-Qw-4ml"/>
+                            <constraint firstItem="Ntf-xX-wAt" firstAttribute="top" secondItem="UMO-9y-RMY" secondAttribute="bottom" constant="116.33" id="K9T-BX-pIj"/>
+                            <constraint firstItem="n1V-nD-eOt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="VRu-Nb-A1C"/>
+                            <constraint firstItem="n1V-nD-eOt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xt9-ff-2j5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n1V-nD-eOt" secondAttribute="trailing" constant="20" id="YKT-HC-PYJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jvs-dL-L7t" secondAttribute="trailing" constant="20" id="ozb-Pd-KNm"/>
+                            <constraint firstAttribute="trailing" secondItem="Ntf-xX-wAt" secondAttribute="trailing" constant="20" id="pd9-Bu-q3e"/>
+                            <constraint firstItem="jvs-dL-L7t" firstAttribute="top" secondItem="n1V-nD-eOt" secondAttribute="bottom" constant="30" id="tnS-1B-uiE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Ntf-xX-wAt" id="KpU-5c-5Hy"/>
+                        <outlet property="questionLabel" destination="n1V-nD-eOt" id="45M-f7-jev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.086956521739133" y="54.910714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
